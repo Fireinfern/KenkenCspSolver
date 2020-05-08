@@ -265,7 +265,7 @@ def CreateGrid():
       file = open(filename[0], 'w')
       for i in range(listaOp.count()):
         arr = GetGridItems(str(i+1))
-        file.write(listaRes.item(i).text() +','+listaRes.item(i).text()+ ',' + str(arr))
+        file.write(listaRes.item(i).text() +','+listaOp.item(i).text()+ ',' + str(arr) + '\n')
       file.close()
 
 
